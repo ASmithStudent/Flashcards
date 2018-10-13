@@ -17,22 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vky-cF-6IA">
-                                <rect key="frame" x="70" y="94" width="235" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vky-cF-6IA">
+                                <rect key="frame" x="79.5" y="94" width="216.5" height="210"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-m5-v61">
-                                        <rect key="frame" x="0.0" y="0.0" width="235" height="210"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-m5-v61">
+                                        <rect key="frame" x="0.0" y="0.0" width="216.5" height="210"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="DQc-lU-0Md"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the capital of Brazil?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPm-Zc-vRt">
-                                        <rect key="frame" x="0.0" y="0.0" width="235" height="210"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the capital of Brazil?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPm-Zc-vRt">
+                                        <rect key="frame" x="0.0" y="0.0" width="216.5" height="210"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="210" id="YK7-2B-v6Q"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -40,16 +43,31 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="VnN-m5-v61" secondAttribute="bottom" id="AUa-1p-1Pc"/>
+                                    <constraint firstAttribute="trailing" secondItem="CPm-Zc-vRt" secondAttribute="trailing" id="EeL-jc-68L"/>
+                                    <constraint firstAttribute="bottom" secondItem="CPm-Zc-vRt" secondAttribute="bottom" id="I6M-tc-BQl"/>
+                                    <constraint firstAttribute="trailing" secondItem="VnN-m5-v61" secondAttribute="trailing" id="PLd-GA-d6u"/>
+                                    <constraint firstItem="VnN-m5-v61" firstAttribute="leading" secondItem="vky-cF-6IA" secondAttribute="leading" id="bhM-bc-Bvn"/>
+                                    <constraint firstItem="CPm-Zc-vRt" firstAttribute="leading" secondItem="vky-cF-6IA" secondAttribute="leading" id="cR5-ko-wIg"/>
+                                    <constraint firstItem="CPm-Zc-vRt" firstAttribute="top" secondItem="vky-cF-6IA" secondAttribute="top" id="kSZ-BF-s9t"/>
+                                    <constraint firstItem="VnN-m5-v61" firstAttribute="top" secondItem="vky-cF-6IA" secondAttribute="top" id="pYY-ro-dZp"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="JJl-cZ-MrJ" appends="YES" id="EDF-vM-THW"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vky-cF-6IA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I06-gg-Ahy"/>
+                            <constraint firstItem="vky-cF-6IA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="qrs-db-8cO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="VnN-m5-v61" id="cGK-9h-4eo"/>
+                        <outlet property="card" destination="vky-cF-6IA" id="w5s-Y9-GaL"/>
                         <outlet property="frontLabel" destination="CPm-Zc-vRt" id="7EZ-V6-wg4"/>
                     </connections>
                 </viewController>
